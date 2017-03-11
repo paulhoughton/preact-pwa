@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Renders correctly\` 1`] = `
+"function () {return (
+    (0, _preact.h)(&quot;div&quot;, { &quot;class&quot;: &quot;about-component mdc-card&quot; },
+      (0, _preact.h)(&quot;section&quot;, { &quot;class&quot;: &quot;mdc-card__primary&quot; },
+        (0, _preact.h)(&quot;h1&quot;, { &quot;class&quot;: &quot;mdc-card__title mdc-card__title--large&quot; }, &quot;PWA&quot;)),
+
+
+
+      (0, _preact.h)(&quot;section&quot;, { &quot;class&quot;: &quot;mdc-card__supporting-text&quot; }, &quot;About this Application&quot;),
+
+
+      (0, _preact.h)(&quot;section&quot;, { &quot;class&quot;: &quot;mdc-card__actions&quot; },
+        (0, _preact.h)(&quot;a&quot;, { href: &quot;#/&quot; },
+          (0, _preact.h)(&quot;button&quot;, { &quot;class&quot;: &quot;mdc-button mdc-button--compact mdc-card__action&quot; }, &quot;OK&quot;)))));}"
+`;
