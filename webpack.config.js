@@ -20,13 +20,13 @@ const PROD_PLUGINS = [
 
 module.exports = {
   entry: {
-    app: "./src"
+    app: "./src",
+    vendor: "./src/vendor"
   },
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle" + CHUNK + ".js"
   },
-
   module: {
     rules: [
       {
@@ -45,7 +45,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      names: ["manifest"],
+      names: ["vendor", "manifest"],
       minChunks: Infinity,
       filename: "[name]" + CHUNK + ".js"
     }),
