@@ -13,6 +13,8 @@ export default () => (
     </section>
     <section class="mdc-card__supporting-text">
       About this Application
+      <br/><br/>
+      <a href="https://github.com/paulhoughton/preact-pwa">GitHub</a>
     </section>
     <section class="mdc-card__actions">
       <a href="#/">
