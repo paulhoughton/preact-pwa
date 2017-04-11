@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#ver:4/11/2017, 7:16:56 AM
+#ver:4/11/2017, 7:41:39 AM
 #plugin:4.6.2
 
 CACHE:
@@ -10,6 +10,7 @@ CACHE:
 ../manifest.f679075a.js
 ../
 ../manifest.json
+/#/
 
 NETWORK:
 *
