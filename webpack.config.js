@@ -13,7 +13,9 @@ const PROD_PLUGINS = [
   new CleanWebpackPlugin(["dist"], { verbose: false }),
   new CopyWebpackPlugin([{ from: "public/" }]),
   new OfflinePlugin({
-    ServiceWorker: { events: true },
+    ServiceWorker: { events: true ,
+       navigateFallbackURL: "/#/"
+   },
     excludes: ["icons/*", "*.map"]
   })
 ];
