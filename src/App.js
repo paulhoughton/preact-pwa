@@ -5,7 +5,7 @@ import "@material/list/dist/mdc.list.css";
 import "@material/toolbar/dist/mdc.toolbar.css";
 
 import "./App.scss";
-import { Router } from "preact-router";
+import Router from "preact-router";
 import { createHashHistory } from "history";
 import { routes, mappings } from "./Routes";
 
@@ -15,17 +15,19 @@ export default class App extends Component {
       <div class="app">
         <div class="app-inner">
           <div class="mdc-toolbar">
-            <section
-              class="mdc-toolbar__section mdc-toolbar__section--align-start"
-              onClick={this.openDrawer}
-            >
-              <div class="hamburger">
-                <div class="hamburger-line" />
-                <div class="hamburger-line" />
-                <div class="hamburger-line" />
-              </div>
-              <span class="mdc-toolbar__title">PWA</span>
-            </section>
+            <div class="mdc-toolbar__row">
+              <section
+                class="mdc-toolbar__section mdc-toolbar__section--align-start"
+                onClick={this.openDrawer}
+              >
+                <div class="hamburger">
+                  <div class="hamburger-line" />
+                  <div class="hamburger-line" />
+                  <div class="hamburger-line" />
+                </div>
+                <span class="mdc-toolbar__title">PWA</span>
+              </section>
+            </div>
           </div>
 
           <aside
@@ -46,7 +48,7 @@ export default class App extends Component {
             </nav>
           </aside>
           <main>
-            <Router history={this.history = createHashHistory()}>
+            <Router history={(this.history = createHashHistory())}>
               {routes}
             </Router>
           </main>
