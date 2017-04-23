@@ -13,9 +13,10 @@ const PROD_PLUGINS = [
   new CleanWebpackPlugin(["dist"], { verbose: false }),
   new CopyWebpackPlugin([{ from: "public/" }]),
   new OfflinePlugin({
-    ServiceWorker: { events: true ,
-       navigateFallbackURL: "/#/"
-   },
+    ServiceWorker: {
+      events: true,
+      navigateFallbackURL: "/#/"
+    },
     excludes: ["icons/*", "*.map"]
   })
 ];
@@ -57,7 +58,8 @@ module.exports = {
   ].concat(PROD ? PROD_PLUGINS : []),
   devtool: PROD ? "source-map" : "cheap-module-eval-source-map",
   node: {
-    fs: "empty"
+    fs: "empty",
+    Buffer: false
   },
   devServer: {
     contentBase: path.join(__dirname, "src"),
