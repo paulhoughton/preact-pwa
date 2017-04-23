@@ -1,5 +1,7 @@
 Simple progressive web app starter kit
 
+_24KB gzipped 100/100 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) score_
+
 - [x] [Material design](https://github.com/material-components/material-components-web/)
 - [x] [Offline mode](https://github.com/NekR/offline-plugin)
 - [x] [Lazy loading](https://github.com/prateekbh/preact-async-route)
